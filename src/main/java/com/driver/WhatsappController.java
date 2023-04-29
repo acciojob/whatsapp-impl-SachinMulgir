@@ -27,7 +27,7 @@ public class WhatsappController {
         //If the mobile number exists in database, throw "User already exists" exception
         //Otherwise, create the user and return "SUCCESS"
         try{
-             whatsappService.createUser(name, mobile);
+            whatsappService.createUser(name, mobile);
             return ("user = " + name + " created.");
         }catch (Exception ex){
             return ex.getMessage();
