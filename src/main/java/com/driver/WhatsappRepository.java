@@ -82,7 +82,11 @@ public class WhatsappRepository {
     }
 
     public List<Group> getAllGroups(){
-        return groupUserMap.keySet().stream().toList();
+        List<Group> grps = new ArrayList<>();
+        for( Group grp : groupMessageMap.keySet()){
+            grps.add(grp);
+        }
+        return grps;
     }
     public User getAdminOfGroup(Group group){
         return adminMap.get(group);
