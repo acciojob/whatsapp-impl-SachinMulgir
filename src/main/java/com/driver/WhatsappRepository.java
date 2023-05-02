@@ -89,7 +89,7 @@ public class WhatsappRepository {
         return grps;
     }
     public User getAdminOfGroup(Group group){
-        return adminMap.get(group);
+         return adminMap.get(group);
     }
 
     public List<User> getUsersOfGroup(Group group){
